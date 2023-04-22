@@ -51,7 +51,7 @@ niter = 3e5;    % max iterations
 eta = 0.05;     % learning rate
 
 %% TRAINING
-[costHistory, W, b] = GradientDescentClassification( ...
+[costHistory, W, b] = GradientDescent( ...
         X_train', y_train_cat, niter, sigma, sigmaprime, eta, shape);
 
 % save the network

@@ -24,7 +24,7 @@ shape = [2, 3, 3, 2];   % ANY NETWORK SHAPE (this includes
 niter = 3e5;
 eta = 0.05;
 
-[costHistory, W, b] = GradientDescentClassification( ...
+[costHistory, W, b] = GradientDescent( ...
         x, y, niter, sigma, sigmaprime, eta, shape);
 
 save NNparams.mat W b sigma sigmaprime
